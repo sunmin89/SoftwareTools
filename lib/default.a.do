@@ -16,4 +16,5 @@ for cfile in $cfiles
 end 
 
 redo-ifchange $ofiles
-evald libtool -static -o $argv[3] $ofiles
+eval ar rcs $argv[3] $ofiles
+# evald libtool -static -o $argv[3] $ofiles
